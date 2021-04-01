@@ -18,7 +18,7 @@ input{
     top: 180px;
 }
 
-button{
+#btnAdd{
     background-color: green;
     width: 100px;
     height:25px;

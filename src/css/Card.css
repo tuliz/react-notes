@@ -2,3 +2,7 @@
     background-color: white;
     width: fit-content;
 }
+
+#btnDelete{
+    background-color: yellow;
+}

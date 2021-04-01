@@ -22,7 +22,7 @@ const InputArea = (props) =>{
         <form>
             <input name="title" value = {card.title} id="title" type="text" placeholder="Title" onChange={handleChange}/>
             <input id="messege" name="messege" value={card.messege} type="text" placeholder="Messege" onChange={handleChange}/>
-            <button onClick = {handleClick}>Add</button>
+            <button id="btnAdd" onClick={handleClick}>Submit</button>
         </form>
     </div>
 }
