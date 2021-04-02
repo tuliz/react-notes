@@ -4,6 +4,8 @@ import InputArea from './InputArea';
 import Card from './Card';
 import Footer from './Footer'
 import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Container} from 'react-bootstrap';
 
 function App() {
   //---Cards State---
@@ -20,7 +22,7 @@ function App() {
   }
 
   return (
-    <div>
+    <Container fluid className="verticalHeight bg-dark">
     <Header/>
 
     <InputArea onAdd = {addCard}/>
@@ -37,7 +39,7 @@ function App() {
     
 
     <Footer/>
-    </div>
+    </Container>
   );
 }
 

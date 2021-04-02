@@ -1,4 +1,5 @@
 import '../css/InputArea.css';
+import {Form, FormControl, Button, Row, Col} from 'react-bootstrap';
 import  React, {useState} from 'react';
 const InputArea = (props) =>{
     const [card, setCard] = useState({
@@ -18,12 +19,42 @@ const InputArea = (props) =>{
 
     }
 
-    return <div className ="form">
-        <form>
-            <input name="title" value = {card.title} id="title" type="text" placeholder="Title" onChange={handleChange}/>
-            <input id="messege" name="messege" value={card.messege} type="text" placeholder="Messege" onChange={handleChange}/>
-            <button id="btnAdd" onClick={handleClick}>Submit</button>
-        </form>
-    </div>
+    return <Form>
+
+        <Col lg={6}>
+          <FormControl
+            className="bg-dark"
+            name ="title" 
+            value = {card.title} 
+            id ="title" 
+            type ="text" 
+            placeholder = "Title" 
+            onChange = {handleChange}
+            />
+        </Col>
+        
+        <Col lg={6}>
+            <FormControl 
+            className="bg-dark" 
+            id ="messege" 
+            name ="messege" 
+            value = {card.messege} 
+            type ="text" 
+            placeholder ="Messege" 
+            onChange = {handleChange}
+            />
+        </Col>   
+            
+            <Col lg={2}>
+            <Button 
+            class ="btn btn-primary"
+            type="submit" 
+            id = "btnAdd" 
+            onClick = {handleClick}>
+            Add
+            </Button>
+            </Col>
+
+        </Form>
 }
 export default InputArea;

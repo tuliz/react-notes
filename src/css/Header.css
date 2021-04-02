@@ -1,17 +1,9 @@
-.header{
-    background-color:#FFE400;
-    padding: 0;
-    margin: 0;
-    width:100%;
-}
-
 h3{
-    font-size:40px;
-    position: relative;
-    left: 50px;
+    font-size:10px;
+    margin-left:10px;
+    color: white;
 }
 
-#keep-img{
-    width: 50px;
-    position: absolute;
+.image-thumbnail{
+    width: 30px;
 }
